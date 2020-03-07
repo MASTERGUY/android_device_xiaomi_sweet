@@ -161,5 +161,12 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
     vendor.display.config@2.0
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.sweet-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/powerhint.json
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
