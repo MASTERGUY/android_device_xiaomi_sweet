@@ -79,6 +79,8 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.sweet.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sweet.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
