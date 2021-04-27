@@ -18,3 +18,7 @@ PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+# Gapps
+ifeq ($(WITH_GMS),true)
+include vendor/gms/products/gms.mk
+endif
